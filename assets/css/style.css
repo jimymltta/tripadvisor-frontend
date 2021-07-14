@@ -153,7 +153,8 @@ main {
 .text-map {
   display: flex;
   justify-content: space-between;
-  height: 460px;
+  /* height: 460px; */
+  margin-bottom: 400px;
 }
 
 .text {
@@ -174,8 +175,6 @@ main {
 }
 
 .map {
-  background-color: #fe5d5d;
-  border-radius: 10px;
   width: 40%;
   height: 460px;
   display: flex;
@@ -184,27 +183,35 @@ main {
 }
 
 .map .cta {
+  background-color: #fe5d5d;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 30px;
+  padding-bottom: 50px;
 }
 
 .map .cta button {
   width: 156px;
   height: 54px;
+  margin: 10px 30px;
   margin-top: 10px;
 }
 
 .cta h2 {
   font-size: 32px;
   line-height: 40px;
+  margin: 10px 30px;
+  margin-top: 20px;
 }
 
 .cta p {
   font-family: "Trip Sans";
   font-size: 16px;
   line-height: 20px;
+  margin: 10px 30px;
 }
 
 .map img {
