@@ -25,6 +25,13 @@ h1 span {
 h2 {
   font-family: "Trip Sans";
   font-weight: bold;
+  font-size: 32px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #545454;
 }
 
 h6 {
@@ -77,7 +84,7 @@ button {
   border-radius: 20px;
 }
 
-header button:hover {
+button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -106,6 +113,7 @@ main {
 .menu > div:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 .menu > div:not(:last-child) {
@@ -154,7 +162,7 @@ main {
   display: flex;
   justify-content: space-between;
   /* height: 460px; */
-  margin-bottom: 400px;
+  margin-bottom: 50px;
 }
 
 .text {
@@ -218,4 +226,90 @@ main {
   height: 175px;
   width: 100%;
   object-fit: cover;
+}
+
+/* SUGGESTIONS */
+
+.entertain {
+  display: flex;
+  margin-bottom: 110px;
+}
+
+.pres {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.pres button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  /* width: 100px; */
+  font-size: 14px;
+  font-weight: 700;
+  text-align: start;
+}
+
+.carousel {
+  /* background-color: cornflowerblue; */
+  width: 848px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+  flex: 4;
+}
+
+.carousel img {
+  height: 206px;
+  width: 242px;
+  object-fit: cover;
+}
+
+.relative {
+  position: relative;
+}
+
+.carousel img:not(:last-child) {
+  margin-right: 16px;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  background-color: white;
+  border: solid 8px white;
+  border-radius: 50%;
+}
+
+.heart:hover {
+  cursor: pointer;
+  background-color: red;
+  border-color: red;
+  color: white;
+}
+
+.carousel h4 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.carousel p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.rest {
+  display: flex;
+  margin-bottom: 110px;
+}
+
+.restore {
+  display: flex;
+  margin-bottom: 200px;
 }
