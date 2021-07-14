@@ -1,2 +1,1 @@
 #tripadvisor-frontend
-# tripadvisor-frontend

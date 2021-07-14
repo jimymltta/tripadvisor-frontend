@@ -22,6 +22,11 @@ h1 span {
   color: #fe5d5d;
 }
 
+h2 {
+  font-family: "Trip Sans";
+  font-weight: bold;
+}
+
 h6 {
   font-family: "Trip Sans";
   font-size: 12px;
@@ -61,8 +66,9 @@ header nav i {
   margin-right: 6px;
 }
 
-header button {
+button {
   font-family: inherit;
+  font-size: 16px;
   background-color: black;
   color: white;
   border: none;
@@ -147,20 +153,62 @@ main {
 .text-map {
   display: flex;
   justify-content: space-between;
+  height: 460px;
 }
 
 .text {
-  width: 560px;
+  width: 50%;
   /* margin-right: 112px; */
+}
+
+.text h2 {
+  font-size: 28px;
+  line-height: 33.6px;
+}
+
+.text p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
 }
 
 .map {
   background-color: #fe5d5d;
-  width: 460px;
+  border-radius: 10px;
+  width: 40%;
   height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.map .cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+}
+
+.map .cta button {
+  width: 156px;
+  height: 54px;
+  margin-top: 10px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.cta p {
+  font-family: "Trip Sans";
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .map img {
-  height: 190px;
+  height: 175px;
   width: 100%;
+  object-fit: cover;
 }
