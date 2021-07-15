@@ -1,7 +1,17 @@
 /* ----------- GLOBAL RULES ----------- */
 body {
   background-color: white;
-  font-family: "Trip Sans";
+  font-family: "Trip Sans Reg";
+  /* width: 1140px;
+  margin: 0px auto; */
+}
+
+header {
+  width: 1140px;
+  margin: 0px auto;
+}
+
+main {
   width: 1140px;
   margin: 0px auto;
 }
@@ -13,9 +23,9 @@ body {
 }
 
 h1 {
-  font-family: "Trip Sans";
+  font-family: "Trip Sans Med";
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h1 span {
@@ -23,19 +33,19 @@ h1 span {
 }
 
 h2 {
-  font-family: "Trip Sans";
+  font-family: "Trip Sans Med";
   font-weight: bold;
   font-size: 32px;
 }
 
 h4 {
-  font-weight: 700;
+  font-family: "Trip Sans Reg";
   font-size: 18px;
   color: #545454;
 }
 
 h6 {
-  font-family: "Trip Sans";
+  font-family: "Trip Sans Med";
   font-size: 12px;
   font-weight: 100;
 }
@@ -216,7 +226,7 @@ main {
 }
 
 .cta p {
-  font-family: "Trip Sans";
+  font-family: "Trip Sans Reg";
   font-size: 16px;
   line-height: 20px;
   margin: 10px 30px;
@@ -261,6 +271,17 @@ main {
   overflow: hidden;
   overflow-x: scroll;
   flex: 4;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .carousel img {
@@ -311,5 +332,89 @@ main {
 
 .restore {
   display: flex;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+}
+
+/* TRAVELER'S GUIDE */
+
+.guide {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.carousel2 {
+  /* background-color: cornflowerblue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carousel2::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel2 {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel2 img {
+  height: 275px;
+  width: 370px;
+  object-fit: cover;
+}
+
+.carousel2 .logo {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.carousel2 h4 {
+  margin-bottom: 0px;
+  color: black;
+}
+
+.carousel2 p {
+  font-size: 14px;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.author img {
+  margin-right: 8px;
+}
+
+.articlesnum {
+  margin-top: 0px;
+}
+
+/* ----------- FOOTER ----------- */
+
+footer {
+  height: 156px;
+  width: 100%;
+  background-color: #f9f1ec;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
 }
