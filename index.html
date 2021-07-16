@@ -19,13 +19,22 @@
   </head>
 
   <body>
+    <!---------- HEADER ---------->
+
     <header>
       <div class="container">
+        <i class="icon-menu_bars"></i>
         <img
           src="./assets/img/Tripadvisor_lockup_horizontal_secondary_registered.svg"
           alt="Logo Tripadvisor"
         />
-
+        <i class="icon-search"></i>
+        <form action="">
+          <div class="input-container">
+            <i class="fas fa-search"></i>
+            <input type="text" />
+          </div>
+        </form>
         <nav>
           <div><i class="fas fa-pencil-alt"></i><span>Avis</span></div>
           <div><i class="far fa-heart"></i><span>Voyages</span></div>
@@ -60,6 +69,14 @@
         <div>
           <span>Forums de voyage</span>
           <i class="fas fa-comments"></i>
+        </div>
+        <div>
+          <span>Vols</span>
+          <i class="icon-flights"></i>
+        </div>
+        <div>
+          <span>Croisières</span>
+          <i class="icon-cruises"></i>
         </div>
         <div>
           <span>Plus</span>
@@ -114,11 +131,10 @@
 
       <!---------- SUGGESTIONS ---------->
 
-      <h2>Paris : les immanquables</h2>
-
       <!-- ENTERTAIN -->
 
-      <section>
+      <section class="section-1">
+        <h2>Paris : les immanquables</h2>
         <div class="entertain">
           <div class="pres">
             <h3>Se divertir</h3>
@@ -446,9 +462,9 @@
       </section>
 
       <!---------- TRAVELER'S GUIDE ---------->
-      <h2>Guides de voyageurs</h2>
 
       <div class="guide">
+        <h2>Guides de voyageurs</h2>
         <div class="carousel2">
           <img
             src="./assets/img/travelerguide/musee-de-montmartre.jpeg"
